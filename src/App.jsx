@@ -1,12 +1,17 @@
-import { useState } from 'react'
 import './App.css'
-import './style/Form.css'
+import { Routes, Route } from 'react-router-dom'
+import Form from './component/Form'
+import Login from './component/Login'
+import Dashboard from './component/Dashboard'
 
 function App() {
-
   return (
-    <div className="App">
-      <h4>hello</h4>
+    <div className='App'>
+      <Routes>
+        <Route path='/' element={<Form />}></Route>
+        <Route path='/Login' element={<Login />}></Route>
+        <Route path='/Dashboard' element={<Dashboard />}></Route>
+      </Routes>
     </div>
   )
 }
