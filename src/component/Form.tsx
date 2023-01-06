@@ -6,9 +6,9 @@ import { AuthenticationContext } from '../context/AuthenticationContext'
 
 const Form = () => {
   const [email, setEmail] = useState('')
-  const [username, setUsername] = useState('')
   const [password1, setPassword1] = useState('')
-  const [password2, setPassword2] = useState('')
+  // const [username, setUsername] = useState('')
+  // const [password2, setPassword2] = useState('')
   const { auth } = useContext(AuthenticationContext)
 
   const onSubmit = async (e) => {
@@ -42,25 +42,11 @@ const Form = () => {
           value={email}
         />
         <input
-          type='text'
-          placeholder='Enter your username'
-          onChange={(e) => setUsername(e.target.value)}
-          required
-          value={username}
-        />
-        <input
           type='password'
           placeholder='Enter your password'
           required
           onChange={(e) => setPassword1(e.target.value)}
           value={password1}
-        />
-        <input
-          type='password'
-          placeholder='Confirm password'
-          required
-          onChange={(e) => setPassword2(e.target.value)}
-          value={password2}
         />
         <input
           type='button'

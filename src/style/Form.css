@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
 *,
 ::after,
 ::before {
@@ -11,27 +12,13 @@ body {
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
+  background: #ce95e6;
 }
 .App {
-  /* border: 1px solid red; */
   min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-}
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Open Sans', sans-serif;
-}
-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background: #95c4e6;
 }
 .container {
   width: 400px;
@@ -39,14 +26,14 @@ body {
   border-radius: 50px;
   background: #fff;
   box-shadow: 24px 24px 48px rgba(174, 210, 236, 0.4),
-    inset 12px 12px 24px #e7f2f9, inset -24px -24px 48px #b8d8ee;
+    inset 12px 12px 24px #e7f2f9, inset -24px -24px 48px #eeb8de;
 }
 .container h2 {
   margin-top: 40px;
   font-size: 36px;
   text-align: center;
   font-weight: 700;
-  color: #3e90d0;
+  color: #ce95e6;
 }
 form {
   display: flex;
@@ -60,11 +47,11 @@ input {
   margin-top: 20px;
   border: none;
   outline: none;
-  background: #6facdc;
+  background: #ce95e6;
   color: #fff;
   border-radius: 40px;
-  box-shadow: 0px 4px 24px #b5d6ee, inset 6px 6px 12px #63a5d9,
-    inset -12px -12px 24px #3e90d0;
+  box-shadow: 0px 4px 24px #b5d6ee, inset 6px 6px 12px #ce95e6,
+    inset -12px -12px 24px #ce95e6;
 }
 ::placeholder {
   color: #fff;
@@ -77,13 +64,16 @@ input {
 }
 .btn:hover {
   cursor: pointer;
-  box-shadow: 0px 4px 24px #b5d6ee, inset 6px 6px 12px #5b7c96,
-    inset -12px -12px 24px #3e90d0;
+  box-shadow: 0px 4px 24px #b5d6ee, inset 6px 6px 12px #ce95e6,
+    inset -12px -12px 24px #ce95e6;
 }
 .container p {
   text-align: center;
-  color: #3e90d0;
+  margin-top: 1rem;
+  font-weight: 700;
+  color: #ce95e6;
 }
 .container a {
-  color: #1166a7;
+  font-weight: 700;
+  color: #ce95e6;
 }

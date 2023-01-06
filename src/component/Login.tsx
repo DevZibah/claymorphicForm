@@ -14,7 +14,7 @@ const Login = () => {
       .then((userCredential) => {
         // Signed in
         const user = userCredential.user
-        window.alert('successfully registered')
+        window.alert('successfully Logged in')
         window.location.replace('http://localhost:5173/Dashboard')
         console.log(user)
       })
