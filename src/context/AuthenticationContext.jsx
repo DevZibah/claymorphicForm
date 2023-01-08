@@ -1,4 +1,3 @@
-// storeContext contains our data from data.json
 import React, { createContext, useContext } from 'react'
 import { initializeApp } from 'firebase/app'
 import { getAuth } from 'firebase/auth'
@@ -8,7 +7,7 @@ export const AuthenticationContext = createContext()
 const AuthenticationContextProvider = ({ children }) => {
   // Your web app's Firebase configuration
   const firebaseConfig = {
-    apiKey: 'AIzaSyCyBpuAhC3jqPXTkrfNrpTfVW6QOvMxPQg',
+    apiKey: import.meta.env.VITE_API_KEY,
     authDomain: 'claymorphic-form.firebaseapp.com',
     databaseURL: 'https://claymorphic-form-default-rtdb.firebaseio.com',
     projectId: 'claymorphic-form',

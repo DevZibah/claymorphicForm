@@ -7,11 +7,9 @@ import { AuthenticationContext } from '../context/AuthenticationContext'
 const Form = () => {
   const [email, setEmail] = useState('')
   const [password1, setPassword1] = useState('')
-  // const [username, setUsername] = useState('')
-  // const [password2, setPassword2] = useState('')
   const { auth } = useContext(AuthenticationContext)
 
-  const onSubmit = async (e) => {
+  const onSubmit = async (e) => {    
     e.preventDefault()
 
     await createUserWithEmailAndPassword(auth, email, password1)
